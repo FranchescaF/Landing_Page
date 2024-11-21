@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page UNIFE</title>
+    <meta name="author" content="Franchesca Fatima Zelaya" />
+    <meta name="description" content="Landing Page UNIFE" />
+    <meta
+      name="keywords"
+      content="proyecto, html, css, java script, popup, modal"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <p class="top__text">
+          Estudia en UNIFÉ | informes@unife.edu.pe | informes2@unife.edu.pe
+        </p>
+        <a class="top__wsp" href="#">
+          <i class="fa-brands fa-whatsapp"></i> Whatsapp
+        </a>
+      </div>
+
+      <div class="header__main">
+        <img
+          src="./images/logo_unife_blanco.png"
+          alt="UNIFÉ Logo"
+          class="header__logo"
+        />
+        <nav class="nav">
+          <a href="#" class="nav__options">Inicio</a>
+          <a href="#" class="nav__options">Asesoría vocacional</a>
+          <a href="#" class="nav__options">Nuestras carreras</a>
+          <a href="#registration-form__title" class="nav__options"
+            >Regístrate aquí</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__content">
+        <div class="main__texts">
+          <p class="main__text1">
+            80% de nuestras estudiantes se gradúan con empleo ¡Sé una de ellas!
+          </p>
+          <p class="main__text2">ADMISIÓN 2025</p>
+          <p class="main__text3">
+            <strong>Evaluación todos los viernes</strong>
+          </p>
+        </div>
+
+        <section class="section__form">
+          <div class="registration-form">
+            <div class="registration-form__registra">
+              <i class="fa-solid fa-chevron-down"></i>
+              <h2
+                id="registration-form__title"
+                class="registration-form__title"
+              >
+                Regístrate aquí
+              </h2>
+            </div>
+
+            <form class="registration-form__form" action="#" method="POST">
+              <input
+                class="registration-form__input"
+                type="text"
+                placeholder="Nombres"
+                required
+              />
+              <input
+                class="registration-form__input"
+                type="text"
+                placeholder="Ap. paterno"
+                required
+              />
+              <input
+                class="registration-form__input"
+                type="text"
+                placeholder="Ap. materno"
+                required
+              />
+              <input
+                class="registration-form__input"
+                type="text"
+                placeholder="DNI"
+                required
+              />
+              <input
+                class="registration-form__input"
+                type="text"
+                placeholder="Celular"
+                required
+              />
+              <input
+                class="registration-form__input"
+                type="email"
+                placeholder="Correo electrónico"
+                required
+              />
+
+              <select class="registration-form__select" required>
+                <option value="" disabled selected>Año de fin. escolar</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
+
+              <select class="registration-form__select" required>
+                <option
+                  class="registration-form__option"
+                  value=""
+                  disabled
+                  selected
+                >
+                  ¿Actualmente trabajas?
+                </option>
+                <option class="registration-form__option" value="Sí">Sí</option>
+                <option class="registration-form__option" value="No">No</option>
+              </select>
+
+              <select class="registration-form__select" required>
+                <option
+                  class="registration-form__option"
+                  value=""
+                  disabled
+                  selected
+                >
+                  Escoge tu carrera
+                </option>
+                <option class="registration-form__option" value="Carrera 1">
+                  Carrera 1
+                </option>
+                <option class="registration-form__option" value="Carrera 2">
+                  Carrera 2
+                </option>
+              </select>
+
+              <div class="terminos">
+                <input class="terminos__input" type="checkbox" required />
+                <label class="terminos__label">
+                  Acepto los <a href="#">términos y condiciones</a>
+                </label>
+              </div>
+
+              <button class="registration-form__button" type="submit">
+                ENVIAR
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <section class="section__description">
+        <div>
+          <p>¿POR QUÉ ESTUDIAR EN UNIFÉ?</p>
+          <p>Excelencia con</p>
+          <p>corazón</p>
+        </div>
+        <div class="description1">
+          Mas de 60 años formando mujeres líderes para el Perú y el mundo
+        </div>
+        <div class="descripcion2">
+          17 programas de intercambio internacional
+        </div>
+        <div class="descripcion3">
+          80% de nuestras estudiantes se gradúan con empleo
+        </div>
+        <div class="descripcion4">
+          Un campus diseñado para tu bienestar universitario
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/3e670ceeb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

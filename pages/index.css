@@ -1,0 +1,228 @@
+@import url("../vendor/normalize.css");
+@import url("../fonts/inter.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  height: 100%; /* Asegura que el body y el html ocupen toda la altura */
+  overflow: auto; /* Permite el desplazamiento si es necesario */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Header General Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el header esté por delante de otros elementos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  background-color: #3ca643; /* Color de fondo del header */
+  transition: all 0.3s ease; /* Transición suave para cambios */
+}
+
+/* Header Top Section */
+.header__top {
+  font-size: 14px;
+  background-color: #80bf21; /* Color de fondo para la parte superior */
+  color: white; /* Color de texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 15px;
+  transition: color 0.3s ease; /* Transición suave en el color */
+}
+
+.header__top a:hover {
+  color: #add9c0; /* Cambia el color del enlace al pasar el mouse */
+}
+
+/* Header Main Section */
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; /* Espaciado interno más consistente */
+  background-color: #3ca643; /* Color de fondo del main header */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Logo Styles */
+.header__logo {
+  width: 160px; /* Tamaño del logo */
+  transition: transform 0.3s ease; /* Transición para efectos de hover */
+}
+
+.header__logo:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  gap: 25px; /* Más espacio entre los enlaces */
+}
+
+.nav__options {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px; /* Espaciado interno para los enlaces */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.nav__options:hover {
+  background-color: #add9c0; /* Color de fondo al pasar el mouse */
+  color: #333; /* Color de texto al pasar el mouse */
+}
+
+.nav__options.active {
+  background-color: #add9c0; /* Fondo del enlace activo */
+  color: #333; /* Color del texto del enlace activo */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el enlace activo */
+}
+
+/* Main Content Styles */
+.main {
+  position: relative;
+  min-height: 100vh;
+  background: url("../images/UNIFE11244.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin-top: 100px; /* Ajusta este valor según la altura de tu header */
+}
+
+.main__content {
+  display: flex;
+  flex-direction: row;
+  gap: 600px;
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  justify-content: space-between;
+}
+
+.main__texts {
+  margin-top: 500px;
+  color: white;
+}
+
+.main__text1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main__text2 {
+  background-color: #64b742;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* Form Styles */
+.section__form {
+  background-color: #ffffff;
+  color: #333;
+  padding: 40px 30px;
+  border-radius: 15px; /* Un poco más redondeado */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave y pronunciada */
+  max-width: 500px; /* Limita el ancho del formulario */
+  margin: 0 auto; /* Centra el formulario */
+  z-index: 10; /* Asegura que el formulario esté por delante */
+  position: relative; /* Necesario para que el z-index funcione */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.section__form:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.registration-form__title {
+  color: #64b742;
+  font-size: 24px; /* Tamaño de letra más grande */
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.registration-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Más espacio entre los campos */
+}
+
+.registration-form__input,
+.registration-form__select {
+  padding: 12px 15px; /* Más espacio interno */
+  border: 1px solid #ccc; /* Borde más claro */
+  background-color: #add9c0; /* Color de fondo verde claro */
+  border-radius: 8px; /* Bordes más redondeados */
+  font-size: 16px; /* Tamaño de fuente más grande */
+  outline: none; /* Elimina el borde azul al hacer clic */
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+.registration-form__input:focus,
+.registration-form__select:focus {
+  border-color: #64b742; /* Cambia el borde al color verde cuando está enfocado */
+}
+
+.terminos {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px; /* Tamaño de texto más grande */
+  gap: 10px;
+}
+
+.terminos__label a {
+  color: #64b742;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición de color suave */
+}
+
+.terminos__label a:hover {
+  color: #57a639; /* Cambia el color del enlace al pasar el mouse */
+}
+
+.registration-form__button {
+  background-color: #64b742;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px; /* Bordes más redondeados */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+.registration-form__button:hover {
+  background-color: #57a639;
+  transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+}
